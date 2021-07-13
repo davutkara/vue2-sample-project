@@ -119,13 +119,17 @@ export default {
     name: {
       immediate: true,
       handler(value) {
-        if (this.form.name.length === 0 && value) this.form.name = value;
+        // empty string
+        value = !value ? "" : value;
+        this.form.name = value;
       },
     },
     email: {
       immediate: true,
       handler(value) {
-        if (this.form.email.length === 0 && value) this.form.email = value;
+        // empty string
+        value = !value ? "" : value;
+        this.form.email = value;
       },
     },
   },
