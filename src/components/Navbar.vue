@@ -64,13 +64,19 @@ import { mapState, mapActions, mapGetters } from "vuex";
 import Login from "@/views/Login";
 import LangDropdown from "@/components/lang-dropdown.vue";
 export default {
+  data() {
+    return {
+      title: "Dummy",
+    };
+  },
   components: { Login, LangDropdown },
   computed: {
     ...mapState("session", ["name"]),
     ...mapGetters("session", ["isSessionActive"]),
     activePage() {
+      const isHome = this.$route.path === "/home";
       return {
-        title: this.$t(this.$route.name),
+        title: isHome ? this.title : this.$t(this.$route.name),
         path: this.$route.path,
       };
     },
