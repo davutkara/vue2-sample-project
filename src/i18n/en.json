@@ -11,5 +11,21 @@
   "SE": "Sweden",
   "KE": "Kenya",
   "BR": "Brazil",
-  "ZW": "Zimbabwe"
+  "ZW": "Zimbabwe",
+  "emailLabel": "Email address:",
+  "emailDescription": "We'll never share your email with anyone else.",
+  "emailPlaceholder": "Enter Email",
+  "phone": "Phone",
+  "phonePlaceholder": "Enter Phone",
+  "submit": "Submit",
+  "nameLabel": "Your Name",
+  "mamePlaceholder": "Enter Name",
+  "country": "Country",
+  "countryDescription": "Choose your country",
+  "text": "Other",
+  "textPlaceholder": "Write something",
+  "hi": "Hi",
+  "sessionMessage": "Your session is active",
+  "password": "Password",
+  "passwordPlaceholder": "Enter Passowrd"
 }

@@ -97,36 +97,5 @@ export default {
       this.form.password = "";
     },
   },
-  i18n: {
-    // `i18n` option, setup locale info for component
-    messages: {
-      en: {
-        hi: "Hi",
-        sessionMessage: "Your session is active",
-        login: "Login",
-        emailLabel: "Email address:",
-        emailDescription: "We'll never share your email with anyone else.",
-        emailPlaceholder: "Enter Email",
-        password: "Password",
-        passwordPlaceholder: "Enter Passowrd",
-        submit: "Submit",
-        nameLabel: "Your Name",
-        mamePlaceholder: "Enter Name",
-      },
-      tr: {
-        hi: "Selam",
-        sessionMessage: "Oturumunuz aktif.",
-        login: "Giris Yap",
-        emailLabel: "E-posta adresiniz:",
-        emailDescription: "E-posta adresinizi kimseyle paylasmiyoruz.",
-        emailPlaceholder: "E-posta giriniz",
-        password: "Sifre",
-        passwordPlaceholder: "Sifre giriniz.",
-        submit: "Gonder",
-        nameLabel: "Adiniz",
-        mamePlaceholder: "Adinizi giriniz",
-      },
-    },
-  },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <b-container class="mt-5 pb-5">
-    <b-jumbotron :header="$root.$t('contactUs')">
+    <b-jumbotron :header="$t('contactUs')">
       <b-form @submit.prevent="onSubmit">
         <b-form-group
           id="input-group-3"
@@ -110,7 +110,7 @@ export default {
       get() {
         return ["TR", "US", "GB", "DE", "SE", "KE", "BR", "ZW"].map((id) => ({
           id,
-          name: this.$root.$t(id),
+          name: this.$t(id),
         }));
       },
     },
@@ -143,40 +143,7 @@ export default {
         text: this.form.text,
       });
     },
-  },
-  i18n: {
-    // `i18n` option, setup locale info for component
-    messages: {
-      en: {
-        emailLabel: "Email address:",
-        emailDescription: "We'll never share your email with anyone else.",
-        emailPlaceholder: "Enter Email",
-        phone: "Phone",
-        phonePlaceholder: "Enter Phone",
-        submit: "Submit",
-        nameLabel: "Your Name",
-        mamePlaceholder: "Enter Name",
-        country: "Country",
-        countryDescription: "Choose your country",
-        text: "Other",
-        textPlaceholder: "Write something",
-      },
-      tr: {
-        emailLabel: "E-posta adresiniz:",
-        emailDescription: "E-posta adresinizi kimseyle paylasmiyoruz.",
-        emailPlaceholder: "E-posta giriniz",
-        phone: "Telefon",
-        phonePlaceholder: "Telefon numaranizi giriniz",
-        submit: "Gonder",
-        nameLabel: "Adiniz",
-        mamePlaceholder: "Adinizi giriniz",
-        country: "Ulke",
-        countryDescription: "Ulkenizi seciniz",
-        text: "Diger",
-        textPlaceholder: "Bir seyler ekleyebilirsiniz.",
-      },
-    },
-  },
+  }
 };
 </script>
 
