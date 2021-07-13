@@ -60,7 +60,16 @@
             label="name"
             :reduce="(country) => country.id"
             required
-          ></v-select>
+          >
+            <template #search="{attributes, events}">
+              <input
+                class="vs__search"
+                :required="!form.country"
+                v-bind="attributes"
+                v-on="events"
+              />
+            </template>
+          </v-select>
         </b-form-group>
 
         <b-form-group
@@ -143,7 +152,7 @@ export default {
         text: this.form.text,
       });
     },
-  }
+  },
 };
 </script>
 
